@@ -6,6 +6,9 @@ class App < Sinatra::Base
   end
 
   post '/' do
+    @name=params[:name]
+    @age=params[:age]
+    @breed=params[:breed]
     erb :display_puppy
   end
 
